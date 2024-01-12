@@ -1,0 +1,146 @@
+@font-face {
+    font-family: Figtree;
+    src: url(./assets/fonts/Figtree-VariableFont_wght.ttf);
+}
+
+body {
+    font-family: Figtree;
+    background-color: hsl(47, 88%, 63%);
+    cursor: url(https://cdn.custom-cursor.com/db/4397/32/arrow2535.png), default;
+}
+
+h3 {
+    color: hsl(0, 0%, 7%);
+    font-weight: 800;
+    font-size: 1.944vw;
+}
+
+.container {
+    display: grid;
+    place-items: center;
+    height: 46vw;
+}
+
+.card {
+    position: relative;
+    margin-top: 8vh;
+    border: 2px solid black;
+    border-radius: 20px;
+    width: 35%;
+    height: auto;
+    box-shadow: .5vw .5vw 0px hsl(0, 0%, 7%);
+    transition: 0.3s;
+}
+
+.card-body {
+    padding: 1.736vw;
+}
+
+.card-body > p {
+    font-size: 1.111vw;
+    margin-top: 1vw;
+}
+
+#learning {
+    background-color: hsl(47, 88%, 63%);
+    display: grid;
+    place-items: center;
+    width: 6vw;
+    height: 2.5vw;
+    margin-top: 2vw;
+    font-size: 1.111vw;
+    font-weight: 800;
+    border-radius: 5px;
+}
+
+#mainpic {
+    border-radius: 10px;
+    width: 100%;
+}
+
+#pfp {
+    width: 3.472vw;
+    height: auto;
+    margin-top: 1.736vw;
+}
+
+#pfpname {
+    position: relative;
+    font-size: 1.5vw;
+    top: 1vw;
+    left: 1.2vw;
+    font-weight: 800;
+}
+
+#text {
+    margin-top: 1.389vw;
+    color: hsl(0, 0%, 50%);
+}
+
+@media only screen and  (max-width: 375px) {
+
+    h3 {
+        font-weight: 800;
+        font-size: 5vw;
+        margin-left: -1.5vw;
+    }
+
+    .container {
+        display: grid;
+        align-items: start;
+    }
+
+    .card {
+        border: 2px solid black;
+        border-radius: 20px;
+        width: 85%;
+        height: auto;
+        box-shadow: 2vw 2vw 0px hsl(0, 0%, 7%);
+        transition: 0.3s;
+    }
+
+    .card-body {
+        padding: 6.5vw;
+    }
+
+    .card-body > p {
+        font-size: 3vw;
+        font-weight: 600;
+        margin-top: 4vw;
+        margin-left: -1.5vw;
+    }
+
+    #learning {
+        width: 17.5vw;
+        height: 5.5vw;
+        margin: 7vw 0 0 -1.5vw;
+        font-size: 3vw;
+        border-radius: 3.5px;
+    }
+
+    #mainpic {
+        margin: -1.5vw 0 0 -1.5vw;
+        border-radius: 10px;
+        width: 105%;
+    }
+
+    #pfp {
+        width: 8vw;
+        height: auto;
+        margin-top: 1.736vw;
+    }
+
+    #pfpname {
+        position: relative;
+        font-size: 3.5vw;
+        top: 1vw;
+        left: 2.5vw;
+        font-weight: 800;
+    }
+
+    #text {
+        margin-top: 4vw;
+        font-size: 3.3vw;
+        margin-left:-1.5vw;
+    }
+}
