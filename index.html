@@ -17,11 +17,13 @@
   </style>
 </head>
 <body>
-  <div class="container">
+  <div class="container" role="main">
     <div class="card">
       <div class="card-body">
-        <img id="mainpic" src="./assets/images/illustration-article.svg" alt="illustration-article picture"/>
-        <div id="learning">Learning</div>
+        <figure>
+          <img id="mainpic" src="./assets/images/illustration-article.svg" alt="illustration-article picture"/>
+        </figure>
+        <span id="learning">Learning</span>
 
         <p>Published 21 Dec 2023</p>
 
@@ -29,17 +31,21 @@
 
         <p id="text">These languages are the backbone of every website, defining structure, content, and presentation.</p>
 
-        <img id="pfp" src="./assets/images/image-avatar.webp" alt="profile picture"/><stan id="pfpname">Greg Hooper</stan>
+        <article>
+          <figure>
+            <img id="pfp" src="./assets/images/image-avatar.webp" alt="profile picture"/><stan id="pfpname">Greg Hooper</stan>
+          </figure>
+        </article>
       </div>
     </div>
   </div>
 
   
-  <footer role="footer">
-  <div class="attribution" style="display: none;">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Omar Albader</a>.
-  </div>
+  <footer role="contentinfo">
+    <div class="attribution" style="display: none;">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Omar Albader</a>.
+    </div>
   </footer>
   <script src="myScript.js"></script>
 

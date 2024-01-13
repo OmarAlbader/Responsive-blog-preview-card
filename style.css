@@ -3,77 +3,99 @@
     src: url(./assets/fonts/Figtree-VariableFont_wght.ttf);
 }
 
-body {
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+article {
+    margin-top: 23px;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
     font-family: Figtree;
     background-color: hsl(47, 88%, 63%);
     cursor: url(https://cdn.custom-cursor.com/db/4397/32/arrow2535.png), default;
 }
 
+body {
+    display: grid;
+    place-content: center;
+}
+
 h3 {
     color: hsl(0, 0%, 7%);
     font-weight: 800;
-    font-size: 1.944vw;
+    font-size: 24px;
+    transition: .2s;
 }
 
 .container {
-    display: grid;
-    place-items: center;
-    height: 46vw;
+    max-height: auto;
+
 }
 
 .card {
     position: relative;
-    margin-top: 8vh;
-    border: 2px solid black;
-    border-radius: 20px;
-    width: 35%;
-    height: auto;
-    box-shadow: .5vw .5vw 0px hsl(0, 0%, 7%);
+    border: 1px solid black;
+    border-radius: 18px;
+    max-width: 384px;
+    height: 522px;
+    box-shadow: 7.2px 7.2px 0px hsl(0, 0%, 7%);
     transition: 0.3s;
 }
 
 .card-body {
-    padding: 1.736vw;
+    padding: 22px;
 }
 
 .card-body > p {
-    font-size: 1.111vw;
-    margin-top: 1vw;
+    font-size: 14px;
+    margin-top: 11px;
 }
 
 #learning {
     background-color: hsl(47, 88%, 63%);
     display: grid;
-    place-items: center;
-    width: 6vw;
-    height: 2.5vw;
-    margin-top: 2vw;
-    font-size: 1.111vw;
+    place-content: center;
+    margin-top: 24px;
+    padding: .8rem .8rem .7rem;
+    width: fit-content;
+    height: 27px;
+    font-size: 14.4px;
     font-weight: 800;
     border-radius: 5px;
+    letter-spacing: -.01rem;
 }
 
 #mainpic {
     border-radius: 10px;
     width: 100%;
+    display: grid;
+    place-content: center;
 }
 
 #pfp {
-    width: 3.472vw;
-    height: auto;
-    margin-top: 1.736vw;
+    width: 33px;
+    height: 33px;
 }
 
 #pfpname {
     position: relative;
-    font-size: 1.5vw;
-    top: 1vw;
-    left: 1.2vw;
+    font-size: 14px;
+    top: 2px;
+    padding-left: 12px;
     font-weight: 800;
 }
 
 #text {
-    margin-top: 1.389vw;
+    margin-top: 15px;
+    font-size: 16.4px;
+    font-weight: 300;
+    line-height: 24px;
     color: hsl(0, 0%, 50%);
 }
 
